@@ -1,0 +1,36 @@
+{{>partials/header}}
+
+{{#show}}
+   como vai a vida?
+{{/show}}
+
+</hr>
+
+<h2>Produtos:</h2>
+
+<ul>
+{{#produto}}
+    <li>{{title}}-{{price}}</li>
+{{/produto}}
+</ul>
+Produtos maiores que 5 reais
+{{#expensives}}
+    <li>{{title}}-{{price}}</li>
+{{/expensives}}
+
+</hr>
+<br>
+Usuarios do banco:
+<hl>
+{{#users}}
+<li>{{nome}}</li>
+</ul>
+{{/users}}
+
+
+
+
+
+</body>
+
+</html>
